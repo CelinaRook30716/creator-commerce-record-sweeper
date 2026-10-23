@@ -1,0 +1,23 @@
+[
+  {
+    "id": "delivery-demo",
+    "kind": "digital_asset_delivery",
+    "object_key": "deliveries/demo.zip",
+    "state": "delivered",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "subscriber-demo",
+    "kind": "subscriber_update",
+    "object_key": "updates/demo.json",
+    "state": "pending",
+    "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "processing-demo",
+    "kind": "content_processing",
+    "object_key": "processing/demo.mp4",
+    "state": "running",
+    "updated_at": "2026-01-01T00:00:00Z"
+  }
+]

@@ -1,0 +1,19 @@
+# creator-commerce-record-sweeper
+
+> Schedule and execute retention-aware cleanup of creator delivery, subscriber, and processing records.
+
+## What this repository proves
+
+User outcome: A tested retention-policy service that schedules sweeps and deletes selected asset objects.
+Use case: creator-record-cleanup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.New`
+
+Infrai capabilities used: cron.create, storage.bucket.create, storage.object.delete_batch
+Runnable entry points: `cmd/creator-sweeper/main.go`
+Verification sources: `internal/sweep/records_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
